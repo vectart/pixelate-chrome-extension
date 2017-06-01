@@ -1,3 +1,7 @@
+var service = analytics.getService('pixelate');
+
+var tracker = service.getTracker('UA-100385646-1');
+
 chrome.runtime.onMessage.addListener(function(request, sender) {
   var img = new Image();
 
@@ -25,4 +29,6 @@ chrome.runtime.onMessage.addListener(function(request, sender) {
   } else {
     img.onload = processImage;
   }
+
+  tracker.sendEvent('Pixelate', 'process', request.favicon);
 });

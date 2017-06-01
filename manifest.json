@@ -13,13 +13,16 @@
   "background": {
     "scripts": [
       "js/close-pixelate.js",
+      "js/google-analytics-bundle.js",
       "src/bg/background.js"
     ],
     "persistent": true
   },
   "permissions": [
     "tabs",
-    "<all_urls>"
+    "<all_urls>",
+    "https://www.google-analytics.com/",
+    "storage"
   ],
   "content_scripts": [
     {
