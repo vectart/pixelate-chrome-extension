@@ -1,6 +1,6 @@
 {
   "name": "Pixelate",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "manifest_version": 2,
   "description": "Reduce visual noise by making all tab icons to follow the same style.",
   "homepage_url": "https://github.com/vectart/pixelate-chrome-extension",
